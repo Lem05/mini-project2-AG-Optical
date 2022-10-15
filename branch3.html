@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./branch.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-body">
+        <div class="appointform">
+            <h2 class="headcenter">Book Appoinment Here</h2>
+            <form action="">
+                <div class="textInput">
+                    <div class="txtform">
+                        <label class="txtlabel">Branch</label>
+                        <input class="txtinput" type="text" value="                             Sta. Maria Branch" disabled>
+                    </div>
+                    <div class="txtform">
+                        <label class="txtlabel" for="name">Enter Name</label>
+                        <input class="txtinput" type="text" required>
+                    </div>
+                    <div class="row">
+                        <div class="txtform">
+                            <label class="txtlabel2" for="age">Age</label>
+                            <input class="txtinput2" type="text" required>
+                        </div>
+                        <div class="txtform">
+                            <label class="txtlabel2" for="gender">Gender</label>
+                            <input class="txtinput2" type="text" required>
+                        </div>
+                    </div>
+                    <div class="txtform">
+                        <label class="txtlabel" for="">Contact No.</label>
+                        <input class="txtinput" type="tel" pattern="[0-9]{11}" required>
+                    </div>
+                    <div class="txtform">
+                        <label class="txtlabel" for="">Email</label>
+                        <input class="txtinput" type="email" required>
+                    </div>                    
+                    <div class="row">
+                        <div class="txtform">
+                            <label class="txtlabel2" for="">Date</label>
+                            <input class="txtinput2" type="date" min="2022-10-14"/>
+                        </div>
+                        <div class="txtform">
+                            <label class="txtlabel2" for="">Time</label>
+                            <input class="txtinput2" type="time" id="appt" name="appt" min="08:00" max="17:00" required>
+                        </div>
+                    </div>
+                    <div class="txtform">
+                        <label class="txtlabel" for="message">Message Us</label>
+                        <textarea id="message" rows="8"></textarea>
+                    </div>
+                    <button type="submit" onclick="">SUBMIT</button>
+                    <div class="back">
+                        <a href="#">HOMEPAGE</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

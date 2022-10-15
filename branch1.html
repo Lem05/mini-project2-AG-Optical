@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abalos-Guillermo Optical Clinic</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="branch.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <!-- ManyChat -->
+<script src="//widget.manychat.com/103563064454293.js" defer="defer"></script>
+<script src="https://mccdn.me/assets/js/widget.js" defer="defer"></script>
+</head>
+<body>
+  <!--This is NavBar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Abalos-Guillermo Optical</a> 
+          <div class="nav-links" id="navLinks">
+            <i class='bx bxs-x-square' onclick="navClose()" id="close"></i>
+            <ul class="navbar-nav">
+              <li class="nav-item ms-3">
+                <a href="location.html" type="button" class="btn btn-outline-light location">Branch Location</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" aria-current="page" href="shopping-cart.html">Shop</a>
+              </li>
+              <li class="nav-item ms-3 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="men-eyewear.html">Men Eyewear</a></li>
+                  <li><a class="dropdown-item" href="women-eyewear.html">Women Eyewear</a></li>
+                  <li><a class="dropdown-item" href="kids-eyewear.html">Kids Eyewear</a></li>
+                </ul>
+                  <li class="nav-item ms-3">
+                    <a class="nav-link" href="#">Login</a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <i class='bx bxs-shopping-bags'id="cart" ><span class="cart-quantity cart-btn text-light">0</span></i>
+                  </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <i class='bx bx-menu-alt-right' onclick="navOpen()" id="open"></i>
+      </nav>
+    <div class="form-body">
+        <div class="appointform">
+            <h2 class="headcenter">Book Appointment Here</h2>
+            <form class="appointment-form" action="">
+                <div class="textInput">
+                    <div class="txtform">
+                        <label class="txtlabel">Branch</label>
+                        <input class="txtinput" type="text" value="                             Asingan Branch" disabled>
+                    </div>
+                    <div class="txtform">
+                        <label class="txtlabel" for="name">Enter Name</label>
+                        <input class="txtinput" type="text" required>
+                    </div>
+                    <div class="row">
+                        <div class="txtform">
+                            <label class="txtlabel2" for="age">Age</label>
+                            <input class="txtinput2" type="text" required>
+                        </div>
+                        <div class="txtform">
+                            <label class="txtlabel2" for="gender">Gender</label>
+                            <input class="txtinput2" type="text" required>
+                        </div>
+                    </div>
+                    <div class="txtform">
+                        <label class="txtlabel" for="">Contact No.</label>
+                        <input class="txtinput" type="tel" pattern="[0-9]{11}" required>
+                    </div>
+                    <div class="txtform">
+                        <label class="txtlabel" for="">Email</label>
+                        <input class="txtinput" type="email" required>
+                    </div>                    
+                    <div class="row">
+                        <div class="txtform">
+                            <label class="txtlabel2" for="">Date</label>
+                            <input class="txtinput2" type="date" min="2022-10-14"/>
+                        </div>
+                        <div class="txtform">
+                            <label class="txtlabel2" for="">Time</label>
+                            <input class="txtinput2" type="time" id="appt" name="appt" min="08:00" max="17:00" required>
+                        </div>
+                    </div>
+                    <div class="txtform">
+                        <label class="txtlabel" for="message">Message Us</label>
+                        <textarea id="message" rows="8"></textarea>
+                    </div>
+                    <button type="submit" onclick="">SUBMIT</button>
+                    <div class="back">
+                        <a href="#">HOMEPAGE</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="bg-primary">
+        <div class="footer-title">
+          <h2 class="email-text text-light">Subscribe to Our Newsletter</h2>
+        </div>
+        <div class="form">
+          <form class="foter" action="#">
+            <div class="form-box">
+              <input class="email" type="email" name="email" placeholder="Enter your email">
+              <button type="submit">Subscribe</button>
+            </div>
+        </form>
+      </div>
+    <div class="footer-nav">
+      <div class="quick-links">
+        <h2 class="links">Quick Links</h2>
+        <a href="#" class="btn btn-link text-light">Home</a>
+        <a href="#" class="btn btn-link text-light">About</a>
+        <a href="#" class="btn btn-link text-light">Contact</a>
+      </div>
+      <div class="quick-links">
+        <h2 class="links">Follow Us</h2>
+          <div class="social-logo">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+          </div>
+      </div>
+      <div class="quick-links">
+        <h2 class="links">Terms and Conditions</h2>
+        <a href="#" class="btn btn-link text-light">Privacy</a>
+        <a href="#" class="btn btn-link text-light">Shipping</a>
+        <a href="#" class="btn btn-link text-light">Refund</a>
+      </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; Abalos-Guillermo Optical Clinic <br> All Rights Reserved</p>
+        <p>Design by: KodegoPro</p>
+      </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+      <script src="samplecart.js"></script>
+      <script>
+        const navLinks = document.getElementById("navLinks");
+  
+        function navClose(){
+          navLinks.style.right = "-200px";
+        }
+  
+        function navOpen(){
+          navLinks.style.right = "0";
+        }
+      </script>
+</body>
+</html>
